@@ -489,110 +489,31 @@ include "templates/$template";
     }
 </script>
 <script>
-    // SSE Status Monitor - Simplified for status tracking only
-    let currentStatus = '<?php echo isset($statusJson[$userIp]['Status']) ? $statusJson[$userIp]['Status'] : 'default'; ?>';
-    let eventSource = null;
-    let reconnectAttempts = 0;
-    const maxReconnectAttempts = 5;
-    
-    function initializeSSE() {
-        // Close existing connection if any
-        if (eventSource) {
-            eventSource.close();
-        }
-        
-        const userIp = '<?php echo $userIp; ?>';
-        console.log('Initializing SSE for IP:', userIp);
-        console.log('Current Status:', currentStatus);
-        
-        eventSource = new EventSource(`sse-status.php?ip=${encodeURIComponent(userIp)}`);
-        
-        eventSource.addEventListener('connected', function(e) {
-            console.log('SSE connected successfully');
-            reconnectAttempts = 0;
-        });
-        
-        eventSource.addEventListener('statusChange', function(e) {
-            try {
-                const data = JSON.parse(e.data);
-                console.log('Status change detected via SSE:', data);
-                console.log('Comparing - Current Status:', currentStatus, 'New Status:', data.status);
-                
-                // Check if status actually changed
-                if (data.status !== currentStatus) {
-                    console.log('STATUS CHANGE CONFIRMED! Reloading page...');
-                    console.log('Status changed from', currentStatus, 'to', data.status);
-                    
-                    // Update current status before reload
-                    currentStatus = data.status;
-                    
-                    // Reload the page when status changes
+    let previousStatus = '<?php echo isset($status) ? $status : 'default'; ?>';
+    let previousMobile = '<?php echo isset($fetchedMobile) ? $fetchedMobile : ''; ?>';
+
+    // Check status every 1 second
+    const statusCheck = setInterval(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'checkStatus.php',
+            data: { ip: '<?php echo $userIp; ?>' },
+            dataType: 'json',  // Specify that we expect JSON response
+            success: function (data) {
+                // No need to parse, jQuery will do it automatically
+                if (data.status !== previousStatus || data.mobile !== previousMobile) {
+                    console.log('Change detected!');
+                    console.log('Previous Status:', previousStatus, 'New Status:', data.status);
+                    console.log('Previous Mobile:', previousMobile, 'New Mobile:', data.mobile);
                     window.location.reload();
-                } else {
-                    console.log('No actual status change detected, continuing...');
                 }
-            } catch (error) {
-                console.error('Error parsing SSE data:', error);
+                previousStatus = data.status;
+                previousMobile = data.mobile;
+            },
+            error: function (xhr, status, error) {
+                console.error('Ajax request failed:', error);
+                console.log('Response Text:', xhr.responseText);
             }
         });
-        
-        eventSource.addEventListener('heartbeat', function(e) {
-            const data = JSON.parse(e.data);
-            console.log('SSE heartbeat received at:', new Date(data.timestamp * 1000));
-        });
-        
-        eventSource.addEventListener('error', function(e) {
-            console.error('SSE connection error:', e);
-            
-            if (eventSource.readyState === EventSource.CLOSED) {
-                console.log('SSE connection closed');
-                
-                // Attempt to reconnect with exponential backoff
-                if (reconnectAttempts < maxReconnectAttempts) {
-                    reconnectAttempts++;
-                    const delay = Math.min(1000 * Math.pow(2, reconnectAttempts), 30000);
-                    console.log(`Attempting to reconnect in ${delay}ms (attempt ${reconnectAttempts}/${maxReconnectAttempts})`);
-                    
-                    setTimeout(() => {
-                        initializeSSE();
-                    }, delay);
-                } else {
-                    console.error('Max reconnection attempts reached. Falling back to page refresh.');
-                    setTimeout(() => {
-                        window.location.reload();
-                    }, 5000);
-                }
-            }
-        });
-        
-        eventSource.onerror = function(e) {
-            if (eventSource.readyState === EventSource.CONNECTING) {
-                console.log('SSE reconnecting...');
-            }
-        };
-    }
-    
-    // Initialize SSE when page loads
-    document.addEventListener('DOMContentLoaded', function() {
-        initializeSSE();
-    });
-    
-    // Clean up SSE connection when page unloads
-    window.addEventListener('beforeunload', function() {
-        if (eventSource) {
-            eventSource.close();
-        }
-    });
-    
-    // Page visibility API to handle tab switching
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden) {
-            console.log('Page hidden - SSE continues running');
-        } else {
-            console.log('Page visible - checking SSE connection');
-            if (!eventSource || eventSource.readyState === EventSource.CLOSED) {
-                initializeSSE();
-            }
-        }
-    });
+    }, 1000);
 </script>

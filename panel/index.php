@@ -68,7 +68,7 @@ header("Pragma: no-cache");
                     <ul
                         class="navbar-nav navbar-right-wrap ms-lg-auto d-flex nav-top-wrap align-items-center ms-4 ms-lg-0">
                         <!-- List -->
-                        <!-- <li class="dropdown ms-2">
+                        <li class="dropdown ms-2">
                             <a href="#" class="btn" style="color: white;display: flex; align-items: center;"
                                 id="config-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 256 256"
@@ -80,7 +80,7 @@ header("Pragma: no-cache");
                                 </svg>
                                 Telegram Config
                             </a>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
             </div>
