@@ -1,0 +1,44 @@
+{
+    "unique_visitors": 2,
+    "daily_stats": {
+        "2025-07-22": {
+            "unique_visitors": 2
+        }
+    },
+    "hourly_stats": {
+        "16": 1,
+        "17": 1
+    },
+    "browser_stats": {
+        "Chrome": 1,
+        "Firefox": 1
+    },
+    "os_stats": {
+        "Mac OS X": 2
+    },
+    "device_stats": {
+        "desktop": 2
+    },
+    "referrer_stats": {
+        "Direct": 2
+    },
+    "country_stats": {
+        "Local": 2
+    },
+    "page_views": [
+        {
+            "timestamp": 1753195792,
+            "ip": "::1",
+            "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36",
+            "referrer": "Direct",
+            "page": "index.php"
+        },
+        {
+            "timestamp": 1753199085,
+            "ip": "127.0.0.1",
+            "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko\/20100101 Firefox\/140.0",
+            "referrer": "Direct",
+            "page": "index.php"
+        }
+    ]
+}

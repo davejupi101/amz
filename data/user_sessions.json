@@ -1,0 +1,14 @@
+{
+    "::1": {
+        "first_visit": 1753195792,
+        "last_visit": 1753195792,
+        "visit_count": 1,
+        "session_start": 1753195792
+    },
+    "127.0.0.1": {
+        "first_visit": 1753199085,
+        "last_visit": 1753199085,
+        "visit_count": 1,
+        "session_start": 1753199085
+    }
+}

